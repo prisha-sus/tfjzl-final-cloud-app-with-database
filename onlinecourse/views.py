@@ -123,6 +123,7 @@ def show_exam_result(request, course_id, submission_id):
             total_score += question.grade
 
     context['course'] = course
+    context['grade'] = total_score
     context['total_score'] = total_score
     context['possible_score'] = possible_score
     context['possible'] = possible_score
